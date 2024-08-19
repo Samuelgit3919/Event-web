@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sidebar-label-container {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.all {
+    background: linear-gradient(blue, crimson);
+}
+
+.sidebar-label-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.sidebar-label-container input:checked~.checkmark {
+    background-color: #2196f3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sidebar-label-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.sidebar-label-container .checkmark:after {
+    top: 6.4px;
+    left: 6.4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* sidebar toggle */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15%;
+    /* Initial width */
+    background-color: #f0f0f0;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    width: 15%;
+    /* Full width on larger screens */
+}
+
+.sidebar.closed {
+    width: 50px;
+    /* Reduced width on smaller screens */
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
