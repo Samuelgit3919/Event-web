@@ -28,8 +28,11 @@ function SecureSpot() {
                         </p>
                     </div>
                     <div className="flex space-x-5">
+
                         <button className="border-2 border-gray-400 p-1 px-4 bg-blue-500 hover:bg-blue-400 text-white transition-colors">
-                            Learn More
+                            <Link to="/more">
+                                Learn More
+                            </Link>
                         </button>
                         <button >
                             <Link

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,19 +12,52 @@ const Navbar = () => {
         setIsOpen(false);
     };
 
+    const activeStyles = {
+        fontWeight: "bold",
+        textDecoration: "underline",
+        color: "green"
+    }
+
+
+
     return (
         <header className="bg-white text-black shadow-md cursor-pointer fixed w-full z-10">
             <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-12">
                 {/* Logo */}
-                <h4 className="text-lg font-bold">EventHub</h4>
+                <Link to="/" className="text-lg font-bold">EventHub</Link>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-6 font-semibold">
-                    <Link to="/" className="hover:text-gray-800">Home</Link>
-                    <Link to="/discovery" className="hover:text-gray-800">Discovery</Link>
-                    <Link to="/stories" className="hover:text-gray-800">Stories</Link>
-                    <Link to="/blog" className="hover:text-gray-800">Blog</Link>
-                    <Link to="/help" className="hover:text-gray-800">Help Center</Link>
+                    <NavLink
+                        to="/"
+                        className="hover:underline underline-offset-2  decoration-green-500 decoration-2"
+                        style={({ isActive }) => isActive ? activeStyles : null}
+                    >Home
+                    </NavLink>
+                    <NavLink
+                        style={({ isActive }) => isActive ? activeStyles : null}
+                        to="/discovery"
+                        className="hover:underline underline-offset-2  decoration-green-500 decoration-2">
+                        Discovery
+                    </NavLink>
+                    <NavLink
+                        style={({ isActive }) => isActive ? activeStyles : null}
+                        to="/stories"
+                        className="hover:underline underline-offset-2  decoration-green-500 decoration-2">
+                        Stories
+                    </NavLink>
+                    <NavLink
+                        style={({ isActive }) => isActive ? activeStyles : null}
+                        to="/blog"
+                        className="hover:underline underline-offset-2  decoration-green-500 decoration-2">
+                        Blog
+                    </NavLink>
+                    <NavLink
+                        style={({ isActive }) => isActive ? activeStyles : null}
+                        to="/help"
+                        className="hover:underline underline-offset-2  decoration-green-500 decoration-2">
+                        Help Center
+                    </NavLink>
                 </nav>
 
                 {/* Mobile Menu Button */}

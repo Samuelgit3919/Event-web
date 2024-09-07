@@ -19,7 +19,8 @@ export const data = [
         date: "today",
         category: {
             name: 'discussion',
-            date: 'upcoming'
+            date: 'upcoming',
+
         },
     },
     {

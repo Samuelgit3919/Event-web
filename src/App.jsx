@@ -11,6 +11,9 @@ import ForgotPassword from './components/Register/fotgotPassword/ForgotPassword'
 import Verification from './components/Register/fotgotPassword/Verification';
 import NewPassword from './components/Register/fotgotPassword/NewPassword';
 import ProductDetails from './components/Products/ProductDetails';
+import Event from './components/create-event/Event';
+import FirstEvent from './components/create-event/FirstEvent';
+import More from './components/More/More';
 
 function App() {
 
@@ -27,8 +30,11 @@ function App() {
           <Route path='/discovery' element={<Discovery />} />
           <Route path='/products/:id' element={<ProductDetails />} />
           <Route path='/stories' element={<Stories />} />
+          <Route path='/firstEvent' element={<FirstEvent />} />
+          <Route path='/event' element={<Event />} />
           {/* <Route path='/Blog' element={<Blog />} /> */}
           <Route path='/Help' element={<Help />} />
+          <Route path='/more' element={<More />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Hero() {
     return (
         <section
-            className="relative -z-10 mb-24 bg-cover bg-center flex items-center justify-center text-white"
+            className=" mb-24 bg-cover bg-center flex items-center justify-center text-white"
             style={{
                 backgroundImage:
                     "url('https://i.pinimg.com/564x/92/57/6b/92576be9601f00886b03e58363369647.jpg')",
@@ -24,18 +24,18 @@ function Hero() {
                     </p>
                     <div className="mx-4 mt-8 px-4 flex flex-col sm:flex-row gap-4">
                         <Link
-                            to="/join"
+                            to="/register"
                             className="bg-green-500 hover:bg-green-600 focus:bg-green-700 px-5 py-2 rounded-md transition-colors duration-300 text-center"
                             aria-label="Join Event"
                         >
-                            Join
+                            Login
                         </Link>
                         <Link
-                            to='/register'
+                            to='/firstEvent'
                             className="bg-red-700 hover:bg-red-800 focus:bg-red-900 px-5 py-2 rounded-md transition-colors duration-300 text-center"
                             aria-label="Sign Up for Event"
                         >
-                            Sign Up
+                            Create Event
                         </Link>
                     </div>
                 </div>

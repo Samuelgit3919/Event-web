@@ -20,7 +20,7 @@ function Help() {
             {/* <Navbar /> */}
             <div>
                 <section
-                    className="relative -z-10  mb-14 bg-cover bg-center flex items-center  justify-center text-white"
+                    className="mb-14 bg-cover bg-center flex items-center  justify-center text-white"
                     style={{ backgroundImage: "url('https://i.pinimg.com/564x/92/57/6b/92576be9601f00886b03e58363369647.jpg')", height: '60vh' }}
                 >
                     <div className="bg-opacity-0 backdrop-blur-sm flex flex-col md:flex-row justify-between w-full max-w-screen-xl items-center px-6 md:px-12 py-8">

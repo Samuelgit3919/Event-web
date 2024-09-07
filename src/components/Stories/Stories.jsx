@@ -42,34 +42,30 @@ function Stories() {
     ];
 
     return (
-        <div className='p-4 mx-auto sm:max-w-screen-xl sm:w-1100'>
+        <div className='p-4 mx-auto max-w-screen-xl'>
             <div className='text-center mb-8 mt-24'>
                 <h1 className='text-3xl font-bold mb-4 bg-[#ebebeb] p-2'>Success Stories</h1>
-                <button className='bg-[#4ac591] text-white px-4 py-2 rounded font-bold'>Request Free Demo</button>
+                <button className='bg-[#4ac591] hover:bg-[#2d7955] text-white px-4 py-2 rounded font-bold'>Request Free Demo</button>
             </div>
             <div className="text-[#e4e0e0] bg-[#ebebeb] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 p-5">
                 {data.map((item, index) => (
-                    <div key={index} className='border-2 bg-slate-50  border-black  overflow-hidden  sm:max-w-lg mx-auto'>
-                        <div className='p-1' style={{ height: '635px' }}>
-                            <img src={item.img} alt={item.title} className='w-full  h-40 sm:h-340 object-cover mb-4' />
+                    <div key={index} className='border-2 bg-slate-50 border-black overflow-hidden'>
+                        <div className='p-1'>
+                            <img src={item.img} alt={item.title} className='w-full h-48 object-cover mb-4' />
                             <div className='p-4'>
                                 <h2 className='text-lg sm:text-xl text-black font-bold mb-2'>{item.title}</h2>
                                 <p className='text-gray-500 text-xs sm:text-sm mb-2'>{item.date}</p>
                                 <hr className='border-t-2 border-gray-400 mb-4' />
-                                <p className='text-gray-700 text-xs sm:text-sm mb-4'>{item.detail}</p>
+                                <p className='text-gray-700 text-sm mb-4 line-clamp-4'>{item.detail}</p>
                                 <a href="#" className='text-blue-700 flex items-center text-xs sm:text-sm float-right'>
                                     Read more <SlArrowRight className='ml-1' />
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 ))}
-                <div>
-                    {/* team image and text  here */}
-                </div>
             </div>
-        </div >
+        </div>
     );
 }
 
