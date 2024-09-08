@@ -36,7 +36,7 @@ function More() {
                             <p>Get personalized recommendations based on your interests and past activities.</p>
                         </div>
                         <div className="flex-1 text-center md:text-left">
-                            <img src="../../../public/images/more1.png" alt="Discover Events" className="w-full h-auto rounded-lg shadow-md" />
+                            <img src="../../../public/images/more1.png" alt="Discover Events" className="w-full h-auto rounded-lg" />
                             <h3 className="text-2xl font-semibold mt-4">Ticketing And Registration</h3>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ function More() {
                     {/* Section 2 */}
                     <div className="md:flex justify-between items-start md:space-x-8 space-y-8 md:space-y-0">
                         <div className="flex-1 text-center md:text-left">
-                            <img src="../../../public/images/more2.png" alt="Engage With Community" className="w-[340px] mx-auto h-[450px] rounded-lg shadow-md" />
+                            <img src="../../../public/images/more2.png" alt="Engage With Community" className="object-contain  mx-auto  rounded-lg " />
                             <h3 className="text-2xl font-semibold mt-4">Ticketing And Registration</h3>
                         </div>
                         <div className="flex-1 space-y-4">
@@ -66,8 +66,46 @@ function More() {
                             <p>Use our community-building tools to foster relationships and encourage repeat attendance.</p>
                         </div>
                         <div className="flex-1 text-center md:text-left ">
-                            <img src="../../../public/images/more3.png" alt="Engage With Community" className="w-[340px] mx-auto h-[450px] rounded-lg shadow-md" />
+                            <img src="../../../public/images/more3.png" alt="Engage With Community" className=" mx-auto  object-contain rounded-lg " />
                             <h3 className="text-2xl font-semibold mt-4">Community Engagement</h3>
+                        </div>
+
+                    </div>
+                    <hr className="w-1/2 mx-auto border-t-2 border-gray-300 my-4" />
+
+                    <div className=''>
+                        <h1 className='font-bold text-4xl pb-2 text-gray-400 md:text-start text-center'>Steps</h1>
+                        <div className='md:flex justify-center text-center space-y-  md:justify-between p-2 '>
+                            <div className='space-y-3 p-2'>
+                                <span className='font-semibold text-gray-400 text-4xl'>01</span>
+                                <h2 className='font-bold'>Sign up</h2>
+                                <p>Create a free account to start
+                                    discovering and promoting
+                                    events.
+                                </p>
+                            </div>
+                            <div className='space-y-3 p-2'>
+                                <span className='font-semibold text-gray-400 text-4xl'>02</span>
+                                <h2 className='font-bold'>Explore</h2>
+                                <p>Use our search and filter tools
+                                    to find events that interest
+                                    you.
+                                </p>
+                            </div>
+                            <div className='space-y-3 p-2'>
+                                <span className='font-semibold text-gray-400 text-4xl'>03</span>
+                                <h2 className='font-bold'>Engage</h2>
+                                <p>Register for events, buy
+                                    tickets, and join discussions.
+                                </p>
+                            </div>
+                            <div className='space-y-3 p-2'>
+                                <span className='font-semibold text-gray-400 text-4xl'>04</span>
+                                <h2 className='font-bold'>Promote</h2>
+                                <p>List your own events and take
+                                    advantage of our  tools.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
