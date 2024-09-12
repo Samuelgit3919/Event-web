@@ -22,17 +22,16 @@ function FirstEvent() {
                     Jump into organizing exciting local events and engage with your community.
                 </p>
 
-                <button className="bg-black text-white rounded-md hover:bg-gray-800 transition duration-200">
-                    <Link
-                        to="/event"
 
-                    >
+                <Link
+                    to="/event"
+                    className="bg-black text-white rounded-md hover:bg-gray-800 transition duration-200 text-center items-center flex"
+                >
+                    <button className="text-2xl p-2 mx-auto">
                         Create your Event
-                    </Link>
-                </button>
-
+                    </button>
+                </Link>
             </div>
-
             {/* Main Content Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 p-2 md:px-12 lg:px-44">
                 {/* Left Content */}
