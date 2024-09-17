@@ -14,6 +14,7 @@ import ProductDetails from './components/Products/ProductDetails';
 import Event from './components/create-event/Event';
 import FirstEvent from './components/create-event/FirstEvent';
 import More from './components/More/More';
+import Blog from './components/Blog/Blog';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           {/* <Route path='/Blog' element={<Blog />} /> */}
           <Route path='/Help' element={<Help />} />
           <Route path='/more' element={<More />} />
+          <Route path='/blog' element={<Blog />} />
         </Routes>
         <Footer />
       </BrowserRouter>
