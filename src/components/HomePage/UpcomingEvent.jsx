@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const UpcomingEvent = () => {
     const data = [
@@ -68,9 +69,12 @@ const UpcomingEvent = () => {
 
             {/* View More Button */}
             <div className="flex justify-center items-center mt-8">
-                <button className="bg-blue-600 text-white px-6 py-3 font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                    View More Events
-                </button>
+                <Link to="/discovery">
+                    <button className="bg-blue-600 text-white px-6 py-3 font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        View More Events
+                    </button>
+                </Link>
+
             </div>
         </section>
     );
